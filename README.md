@@ -6,3 +6,11 @@
 * To get total value of the array we use reduce method<br/>
 * .reduce() method take a callback function with <br/>two arguments(reducer(or accumulataor) and current value)<br/>
 * array.reduce((acc, currentVal) => acc + cV) = 15 <br/>
+
+## Installation 
+
+```
+git clone https://github.com/GoogleNanodegreeScholarship/reduce
+cd reduce
+npm install
+```
