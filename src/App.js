@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
@@ -19,9 +18,15 @@ class App extends Component {
           <li style={liStyle}>.reduce() method take a callback function with <br/>two arguments(reducer(or accumulataor) and current value)</li>
           <li style={liStyle}>array.reduce((acc, cV) => acc + cV) = {array.reduce((acc, cV) => acc + cV)}</li>
         </ul>
+          <h3>To add initialValue to call back funciton</h3>
+          <p>array.reduce((acc, cV) => acc + cV, initialVal)</p>
+          <p>array.reduce((acc, cV) => acc + cV, 10) = {array.reduce((acc, cV) => acc + cV, 10)}</p>
         <hr/>
-        <h1>REDUCE defined function</h1>
-        {array.reduce(reducer, 5)}
+        <h1>REDUCE pre defined function</h1>
+        <p>array.reduce(reducer) = {array.reduce(reducer)}</p>
+          <h3>To add initialValue to predefined funciton</h3>
+          <p>array.reduce(reducer, initialVal)</p>
+          <p>array.reduce(reducer, 10) = {array.reduce(reducer, 10)}</p>
       </div>
     );
   }
