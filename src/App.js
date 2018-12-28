@@ -9,6 +9,8 @@ class App extends Component {
     const array = [ 1, 2, 3, 4, 5 ]
     //defined reducer function
     const reducer = (accumulator, currVal) => accumulator + currVal
+    const initVal = 0;
+    const objectArray = [{ x: 1}, {x: 2}, {x: 3}]
     return (
       <div className="App">
         <h1>REDUCE callback function</h1>
@@ -24,9 +26,18 @@ class App extends Component {
         <hr/>
         <h1>REDUCE pre defined function</h1>
         <p>array.reduce(reducer) = {array.reduce(reducer)}</p>
-          <h3>To add initialValue to predefined funciton</h3>
-          <p>array.reduce(reducer, initialVal)</p>
-          <p>array.reduce(reducer, 10) = {array.reduce(reducer, 10)}</p>
+        <h3>To add initialValue to predefined funciton</h3>
+        <p>array.reduce(reducer, initialVal)</p>
+        <p>array.reduce(reducer, 10) = {array.reduce(reducer, 10)}</p>
+        <hr/>
+
+        <h1>REDUCE with an array of objects</h1>
+        <h4>to use reduce method with an object initialValue must be provided</h4>
+        <p>const initVal = 0</p>
+        <p>objectArray = [ x: 1, x: 2, x: 3 ].reduce(acc, curVal) => acc + curVal, initVal</p>
+            <p>console.log(objectArray)</p>
+            <p>// {objectArray.reduce((acc, curVal) => acc + curVal.x, initVal)}</p>
+
       </div>
     );
   }
